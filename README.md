@@ -28,3 +28,12 @@ Nessa aula foi desenvolvido um script que atende aos seguintes requisitos:
 - Abre algum diretorio no sistema operacional
 - Lista os arquivos do diretorio aberto
 - E imprimi uma barra de progresso na tela para cada arquivo impresso
+
+### Observacoes
+
+Padrao de desenvolvimento utilizado:
+
+- Snake case (exemplo_funcao())
+- Todas as nomenclaturas em ingles
+- Sem comentarios no codigo (Codigo limpo)
+- Sem acentos, caracteres especias e pontuacoes

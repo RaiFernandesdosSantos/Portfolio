@@ -29,6 +29,10 @@ Nessa aula foi desenvolvido um script que atende aos seguintes requisitos:
 - Lista os arquivos do diretorio aberto
 - E imprimi uma barra de progresso na tela para cada arquivo impresso
 
+## Aula dia 30/10
+
+Nessa aula começamos a ver como utilizar o Flask para criar rotas, e foi passado 5 atividades para serem desenvolvidos utilizando Flask, html, css e javascript.
+
 ### Observacoes
 
 Padrao de desenvolvimento utilizado:

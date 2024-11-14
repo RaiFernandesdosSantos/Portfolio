@@ -26,12 +26,12 @@ async function createUserArray() {
 function populate() {
   const tableBody = document.querySelector(".tbody");
   tableBody.innerHTML = `
-    <div class="linha">
-        <div class="coluna">ID</div>
-        <div class="coluna">Nome</div>
-        <div class="coluna">Sobrenome</div>
-        <div class="coluna">E-mail</div>
-        <div class="coluna">Acoes</div>
+    <div class="row">
+        <div class="column">ID</div>
+        <div class="column">Nome</div>
+        <div class="column">Sobrenome</div>
+        <div class="column">E-mail</div>
+        <div class="column">Acoes</div>
     </div>`;
 
   const start = (currentPage - 1) * recordsPerPage;
@@ -41,13 +41,13 @@ function populate() {
 
   usersToDisplay.forEach((user) => {
     const row = document.createElement("div");
-    row.classList.add("linha");
+    row.classList.add("row");
     row.innerHTML = `
-      <div class="coluna">${user.id}</div>
-      <div class="coluna">${user.name}</div>
-      <div class="coluna">${user.username}</div>
-      <div class="coluna">${user.email}</div>
-      <div class="coluna">
+      <div class="column">${user.id}</div>
+      <div class="column">${user.name}</div>
+      <div class="column">${user.username}</div>
+      <div class="column">${user.email}</div>
+      <div class="column">
           <button onclick="deleteUser(${user.id})">Excluir</button>
       </div>`;
 

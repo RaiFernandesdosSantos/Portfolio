@@ -85,7 +85,7 @@ html {
     color: white;
 }
 
-.container .content .tabela {
+.container .content .table {
     border: 0.1rem solid black;
     padding: 1rem;
     border-radius: 1rem;
@@ -95,13 +95,13 @@ html {
     width: 80%;
 }
 
-.container .content .tabela .tbody {
+.container .content .table .tbody {
     display: flex;
     flex-direction: column;
     border-bottom: .1rem solid black;
 }
 
-.container .content .tabela .tbody .linha {
+.container .content .table .tbody .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,11 +109,11 @@ html {
     padding: 1rem;
 }
 
-.container .content .tabela .tbody .linha:last-child {
+.container .content .table .tbody .row:last-child {
     border-bottom: none;
 }
 
-.container .content .tabela .tbody .linha .coluna {
+.container .content .table .tbody .row .column {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,11 +121,11 @@ html {
     width: 25%;
 }
 
-.container .content .tabela .tbody .linha .coluna:last-child {
+.container .content .table .tbody .row .column:last-child {
     border-right: none;
 }
 
-.container .content .tabela .tbody .linha .coluna button {
+.container .content .table .tbody .row .column button {
     font-size: 1.5rem;
     padding: 0.7rem;
     border-radius: 0.5rem;
@@ -135,18 +135,18 @@ html {
     color: white;
 }
 
-.container .content .tabela .tbody .linha .coluna button:hover {
+.container .content .table .tbody .row .column button:hover {
     background-color: darkred;
 }
 
-.container .content .tabela .paginacao {
+.container .content .table .pagination {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 1rem;
 }
 
-.container .content .tabela .paginacao button {
+.container .content .table .pagination button {
     font-size: 1.5rem;
     padding: .7rem;
     border-radius: 0.5rem;

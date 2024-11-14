@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 1</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css' )}}">
 </head>
 
 <body>
-    <!-- Criar um canva onde o usuario possa mover a imagem para os lados com as setinhas-->
+    <div class="container">
+        <div class="canvas">
+            <div class="inputImagem">
+                <span>Escolha uma imagem e use as setas para movimentar</span>
 
-    <canvas></canvas>
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+
+            <canvas id="canvas" width="1200" height="600"></canvas>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='canvas.js' )}}"></script>
 </body>
 
 </html>

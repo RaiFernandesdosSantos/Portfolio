@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css' )}}">
 </head>
 
 <body>
-    <!-- Criar um jeito do usuario conectar a webcam e exibir na tela -->
+    <div class="container">
+        <div class="webcam">
+            <div class="cameras">
+                <video id="video" autoplay></video>
+                <canvas id="canvas"></canvas>
+            </div>
+            <button id="captureButton">Capturar Imagem</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='webcam.js' )}}"></script>
 </body>
 
 </html>

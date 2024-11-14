@@ -1,6 +1,6 @@
 let users = [];
 let currentPage = 1;
-const recordsPerPage = 15;
+const recordsPerPage = 13;
 
 async function createUserArray() {
   try {
@@ -48,7 +48,7 @@ function populate() {
       <div class="coluna">${user.username}</div>
       <div class="coluna">${user.email}</div>
       <div class="coluna">
-          <button onclick="excluir(${user.id})">Excluir</button>
+          <button onclick="deleteUser(${user.id})">Excluir</button>
       </div>`;
 
     tableBody.appendChild(row);

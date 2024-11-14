@@ -13,6 +13,11 @@ def atividade_um():
     return render_template("atividade1.html")
 
 
+@app.route("/atividade2")
+def atividade_dois():
+    return render_template("atividade2.html")
+
+
 @app.route("/atividade3")
 def atividade_tres():
     return render_template("atividade3.html")

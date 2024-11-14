@@ -57,7 +57,35 @@ html {
     color: white;
 }
 
-.container .tabela {
+.container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container .content .nav {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem
+}
+
+.container .content .nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    margin-right: 2rem;
+    background-color: #0D6EFD;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.container .content .tabela {
     border: 0.1rem solid black;
     padding: 1rem;
     border-radius: 1rem;
@@ -67,13 +95,13 @@ html {
     width: 80%;
 }
 
-.container .tabela .tbody {
+.container .content .tabela .tbody {
     display: flex;
     flex-direction: column;
     border-bottom: .1rem solid black;
 }
 
-.container .tabela .tbody .linha {
+.container .content .tabela .tbody .linha {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,11 +109,11 @@ html {
     padding: 1rem;
 }
 
-.container .tabela .tbody .linha:last-child {
+.container .content .tabela .tbody .linha:last-child {
     border-bottom: none;
 }
 
-.container .tabela .tbody .linha .coluna {
+.container .content .tabela .tbody .linha .coluna {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,11 +121,11 @@ html {
     width: 25%;
 }
 
-.container .tabela .tbody .linha .coluna:last-child {
+.container .content .tabela .tbody .linha .coluna:last-child {
     border-right: none;
 }
 
-.container .tabela .tbody .linha .coluna button {
+.container .content .tabela .tbody .linha .coluna button {
     font-size: 1.5rem;
     padding: 0.7rem;
     border-radius: 0.5rem;
@@ -107,18 +135,18 @@ html {
     color: white;
 }
 
-.container .tabela .tbody .linha .coluna button:hover {
+.container .content .tabela .tbody .linha .coluna button:hover {
     background-color: darkred;
 }
 
-.container .tabela .paginacao {
+.container .content .tabela .paginacao {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 1rem;
 }
 
-.container .tabela .paginacao button {
+.container .content .tabela .paginacao button {
     font-size: 1.5rem;
     padding: .7rem;
     border-radius: 0.5rem;
@@ -126,4 +154,57 @@ html {
     cursor: pointer;
     background-color: #0D6EFD;
     color: white;
+}
+
+.container .canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    font-size: 2rem;
+    border: .1rem solid black;
+    gap: 2rem;
+}
+
+.container .canvas .inputImagem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 2rem;
+}
+
+.container .canvas #canvas {
+    border: .1rem solid black;
+}
+
+.container .webcam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+    width: 73%;
+    padding: 2rem;
+    border: .1rem solid black;
+    gap: 2rem;
+}
+
+.container .webcam button {
+    font-size: 1.5rem;
+    padding: .7rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.container .webcam .cameras {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
